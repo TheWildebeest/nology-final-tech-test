@@ -8,6 +8,7 @@ let inputOne = document.querySelector("#numbers");
 let buttonOne = document.querySelector("#pushThis");
 let inputTwo = document.querySelector("#digit");
 let buttonTwo = document.querySelector("#filterThis");
+let resetButton = document.querySelector("#resetAll");
 
 const pushThis = () => {
   inputOne.value ?
@@ -34,7 +35,9 @@ const resetAll = () => {
 
 buttonOne.addEventListener("click", pushThis)
 inputOne.addEventListener("keyup", (e) => { if (e.keyCode === 13) { e.preventDefault(); buttonOne.click(); } })
-buttonTwo.addEventListener("click", filterThis)
+buttonTwo.addEventListener("click", filterThis);
+inputTwo.addEventListener("keyup", (e) => { if (e.keyCode === 13) { e.preventDefault(); buttonTwo.click(); } })
+resetButton.addEventListener("click", resetAll);
 
 
 console.log(filterThis(sampleArray, sampleNumber));
