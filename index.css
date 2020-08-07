@@ -1,0 +1,64 @@
+@font-face {
+  font-family: "black";
+  src: url("./lblack.ttf");
+}
+@font-face {
+  font-family: "viner";
+  src: url("./vineritc.ttf");
+}
+
+* {
+  margin: 2% 0;
+  padding: 0;
+}
+
+body {
+  background-color: black;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+#heading {
+  margin: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  background-image: url(https://media.giphy.com/media/f4IjBQupqojhqQzKk2/giphy.gif);
+  background-size: cover;
+}
+
+h1 {
+  font-size: 150px;
+  font-family: "black";
+  color: #760000;
+}
+
+h2,
+h3 {
+  font-family: viner;
+  font-size: 40px;
+}
+h2::first-letter,
+h3::first-letter {
+  font-family: black;
+}
+
+#inputarea {
+  position: fixed;
+  bottom: 0;
+  left: 30%;
+  right: 30%;
+  color: #760000;
+  font-size: 20px;
+  font-weight: bold;
+}
